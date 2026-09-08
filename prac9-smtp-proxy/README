@@ -1,0 +1,27 @@
+Practical Assignment 9 – SMTP Proxy with Newspeak Filter
+COS 332 – Computer Networks
+
+Author: Gundo Tshavhungwe
+Student Number: 26855412
+
+Files included:
+- SmtpProxy.java   (source code)
+- SmtpProxy.class  (executable)
+- README.txt       (this file)
+
+How to run the proxy:
+1. Ensure Java is installed (see commands below).
+2. Start your SMTP server (e.g., the provided MockSmtpServer) on port 8025.
+3. Compile: javac SmtpProxy.java
+4. Run: java SmtpProxy
+5. Connect a client (e.g., telnet) to localhost:55555.
+
+Extra features implemented:
+- Logging of all email modifications to proxy.log (audit trail)
+- Statistics (total emails, Illuminati replacements, word substitutions)
+- Multi‑threaded client handling
+- Multi‑word and case‑insensitive substitutions (e.g., "very good" → "plusgood")
+- Illuminati detection (replaces whole email with "Hello world")
+
+MD5 hash of executable (SmtpProxy.class):
+0a2602fe1a0a610d0dcdff504cf2eb11
