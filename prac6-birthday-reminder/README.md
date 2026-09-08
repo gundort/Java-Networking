@@ -1,6 +1,5 @@
 ### Prac 6 – Birthday Reminder (`prac6-birthday-reminder/README.md`)
 
-```markdown
 # Birthday Reminder with Mock SMTP Server
 
 A lightweight email-based birthday reminder system. The BirthdayReminder application reads events from a text file, checks which events occur today (or on a given date), and sends email notifications via SMTP. The MockServer is a dummy SMTP server that captures and prints outgoing emails to the console, allowing you to test the reminder system without a real mail server.
@@ -76,7 +75,8 @@ Happy Birthday John!
 --- END EMAIL ---
 3. Stop the server
 Press Ctrl+C in the mock server terminal when done.
-File Structure
+
+# File Structure
 text
 birthday-reminder/
 ├── BirthdayReminder.java   # Main reminder client (assumed)
@@ -84,7 +84,7 @@ birthday-reminder/
 ├── events.txt              # (example) event data file
 └── README.md               # This file
 
-Notes / Caveats
+# Notes / Caveats
 * The mock server uses port 2525 by default. If you change the port, update the PORT constant in both the server and the client.
 * The mock server is for development only – it does not deliver emails, only logs them.
 * The BirthdayReminder client is not included in this repository (you need to write it or obtain it separately). This project focuses on the mock server for testing.
