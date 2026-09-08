@@ -50,7 +50,7 @@ Endpoint	Method	Description
 /search?q=<keyword>	GET	Shows search results matching the keyword.
 /image?name=<filename>	GET	Serves the image file from the images/directory.
 
-#File Structure
+# File Structure
 
 appointment-server-image/
 ├── AppointmentServer.java      # Main server + inner ClientHandler
