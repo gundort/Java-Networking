@@ -1,4 +1,4 @@
-### Prac 6 – Birthday Reminder (`prac6-birthday-reminder/README.md`)
+### Prac 6 – Birthday Reminder
 
 # Birthday Reminder with Mock SMTP Server
 
