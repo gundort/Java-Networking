@@ -1,13 +1,8 @@
+## Prac 2 - README.md
 
----
-
-### Prac 2 - README.md
-*(Place in `prac2-telnet-appointments/`)*
-
-```markdown
 # Appointment Server (Telnet)
 
-A multi-user appointment management server. Clients connect via telnet and use simple text commands to add, delete, search, and list appointments. The server handles multiple simultaneous users with thread-per-client design and persists data to a plain text file.
+A multiuser appointment management server. Clients connect via telnet and use simple text commands to add, delete, search and list appointments. The server handles multiple simultaneous users with thread-per-client design and persists data to a plain text file.
 
 ## Features
 
@@ -34,14 +29,16 @@ A multi-user appointment management server. Clients connect via telnet and use s
 ## Setup & Installation
 
 1. Clone the repository:
-   ```bash
+ 
    git clone https://github.com/your-username/appointment-server.git
    cd appointment-server
 
-4. Compile the Java source: bash  javac AppointmentServer.java 
-6. Run the server: bash  java AppointmentServer  The server will start on port 8088 (default) and display: text  Appointment Server started on port 8088
-7. Connect using: telnet localhost 8088 
-Usage
+2. Compile the Java source: bash  javac AppointmentServer.java 
+3. Run the server: bash  java AppointmentServer  The server will start on port 8088 (default) and display: text  Appointment Server started on port 8088
+4. Connect using: telnet localhost 8088
+
+
+# Usage
 1. Connect from another terminal:  telnet localhost 8088 
 You'll see a welcome banner and a > prompt.
 Type commands (case-insensitive) and press Enter.
