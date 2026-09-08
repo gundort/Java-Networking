@@ -1,6 +1,5 @@
-### Prac 8 – FTP Backup (`prac8-ftp-backup/README.md`)
+### Prac 8 – FTP Backup 
 
-```markdown
 # FTP Backup
 
 A directory monitoring and FTP backup utility. The program watches a local directory for file changes (create, modify, delete) and automatically synchronises changes with an FTP server. New or modified files are uploaded; deleted files are removed from the remote server.
@@ -58,13 +57,15 @@ Watching directory: /path/to/watchdir
 * Deleted remote file: /test.txt 
 4. Stop the Program
 Press Ctrl+C in the terminal where the program is running.
-File Structure
+
+# File Structure
 text
 ftp-backup/
 ├── FTPBackup.java      # Main application
 ├── watchdir/           # (auto-created) directory to monitor
 └── README.md           # This file
-Notes / Caveats
+
+# Notes / Caveats
 * The FTP server credentials are hard-coded in FTPBackup.java. For production use, consider reading them from a configuration file or environment variables.
 * The remote directory is set to / (root of the FTP user's home). You can change the REMOTE_DIRconstant to a subdirectory (e.g., /backup).
 * The program uses passive mode (PASV). If your FTP server requires active mode, you would need to modify the implementation.
