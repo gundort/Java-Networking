@@ -1,6 +1,5 @@
-### Prac 9 – SMTP Proxy (`prac9-smtp-proxy/README.md`)
+### Prac 9 – SMTP Proxy 
 
-```markdown
 # SMTP Proxy (Newspeak Word Substitution)
 
 An SMTP proxy that sits between an email client and an SMTP server. It intercepts email content, applies a set of word substitutions (in the spirit of Orwell's Newspeak), appends a disclaimer, and logs all changes. If the email contains the word "Illuminati", the entire message is replaced with "Hello world". The proxy is multi-threaded, handles multiple clients, and keeps statistics.
@@ -72,14 +71,16 @@ Total emails processed: 5
 Illuminati replacements: 1
 Total word substitutions: 12
 ========================
-File Structure
-text
+
+# File Structure
+
 smtp-proxy/
 ├── SmtpProxy.java          # Main proxy implementation
 ├── MockSmtpServer.java     # Mock SMTP server for testing
 ├── proxy.log               # (auto-generated) log of modifications
 └── README.md               # This file
-Notes / Caveats
+
+# Notes / Caveats
 * The proxy only modifies the email body (headers and commands are forwarded unchanged).
 * The word substitutions are case-insensitive and respect word boundaries (e.g., "fastest" is not changed).
 * The "Illuminati" check overrides all other substitutions – if found, the entire body becomes "Hello world\r\n".
