@@ -1,6 +1,4 @@
 
----
-
 ### Prac 4 - README.md
 *(Place in `prac4-http-appointments/`)*
 
@@ -40,7 +38,8 @@ A multi-user appointment management server accessible via a web browser. Users c
    cd appointment-server-image
 
 1. Open your browser and navigate to http://localhost:8090.
-Usage
+
+# Usage
 All interaction happens through the web interface.
 * Add an appointment – fill in the date, time, description, and optionally select an image. Click Add Appointment.
 * Search – type a keyword into the search box and click Search.
@@ -53,6 +52,7 @@ Endpoint	Method	Description
 /delete?id=<id>	GET	Deletes the appointment with the specified ID.
 /search?q=<keyword>	GET	Shows search results matching the keyword.
 /image?name=<filename>	GET	Serves the image file from the images/directory.
+
 File Structure
 text
 appointment-server-image/
@@ -62,6 +62,7 @@ appointment-server-image/
 │   └── 1612345678_abc123.jpg   # example uploaded image
 └── README.md                   # This file
 * appointments.txt format: id|date|time|description|imageFile (one per line). You can manually edit this file while the server is stopped.
+
 Notes / Caveats
 * The default port is 8090. If that port is already in use, change the PORT constant in the source.
 * Image uploads are read entirely into memory; for very large files (e.g., >10 MB) this may be heavy – but for typical appointment pictures it's fine.
