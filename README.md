@@ -1,11 +1,11 @@
-# ☕ Java Networking Projects – COS 332
+#  Java Networking Projects
 
-A comprehensive portfolio of **pure Java** networking assignments from my Computer Networks module (COS 332).  
+A comprehensive portfolio of **pure Java** networking assignments from my Computer Networks   
 Every project is built from scratch using **standard Java sockets and I/O** – no external libraries, no frameworks – just raw TCP/IP, protocol implementations, and multithreading.
 
 ---
 
-## 📡 Project List (All Java + Networking)
+##  Project List (All Java + Networking)
 
 | Practical | Description | Java Networking Concepts |
 |-----------|-------------|---------------------------|
@@ -20,7 +20,7 @@ Every project is built from scratch using **standard Java sockets and I/O** – 
 
 ---
 
-## 🧰 Common Tech Stack Across All Projects
+##  Common Tech Stack Across All Projects
 
 - **Language:** Java (JDK 8+)
 - **Networking:** `java.net.Socket`, `ServerSocket`, `BufferedReader`/`PrintWriter`
@@ -31,7 +31,7 @@ Every project is built from scratch using **standard Java sockets and I/O** – 
 
 ---
 
-## 🚀 How to Run Any Project (Generic Steps)
+##  How to Run Any Project (Generic Steps)
 
 1. Navigate to the project folder:
    ```bash
