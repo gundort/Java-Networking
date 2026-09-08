@@ -1,0 +1,27 @@
+dn: ou=Planes,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Planes
+
+dn: cn=Boeing747,ou=Planes,dc=example,dc=com
+objectClass: device
+cn: Boeing747
+description: 920
+
+dn: cn=AirbusA380,ou=Planes,dc=example,dc=com
+objectClass: device
+cn: AirbusA380
+description: 1020
+
+dn: ou=Trains,dc=example,dc=com
+objectClass: organizationalUnit
+ou: Trains
+
+dn: cn=Shinkansen,ou=Trains,dc=example,dc=com
+objectClass: device
+cn: Shinkansen
+description: 320
+
+dn: cn=Eurostar,ou=Trains,dc=example,dc=com
+objectClass: device
+cn: Eurostar
+description: 300
