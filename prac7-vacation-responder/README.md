@@ -1,6 +1,5 @@
-### Prac 7 – Vacation Responder (`prac7-vacation-responder/README.md`)
+### Prac 7 – Vacation Responder
 
-```markdown
 # Vacation Responder (POP3 + SMTP)
 
 An automated email vacation responder that checks a POP3 mailbox for messages with a specific subject keyword, filters out mailing list messages, and sends an out-of-office reply to individual senders – without sending duplicate replies. The system uses raw sockets for both POP3 and SMTP communication (no external email libraries).
@@ -110,7 +109,7 @@ Thank you for your understanding.
 
 Press Ctrl+C in each mock server terminal when done.
 
-File Structure
+# File Structure
 
 text
 vacation-responder/
@@ -119,7 +118,8 @@ vacation-responder/
 ├── MockSmtpServer.java      # Mock SMTP server for testing
 ├── sent_senders.txt         # (auto-generated) list of replied senders
 └── README.md                # This file
-Notes / Caveats
+
+# Notes / Caveats
 
 The POP3 server uses hard-coded credentials: testuser / testpass. If you use a real POP3 server, update the POP3_USER and POP3_PASS constants in VacationResponder.java.
 The SMTP server does not actually deliver emails – it only logs them. This is intentional for testing.
