@@ -1,8 +1,5 @@
-
 ### Prac 4 - README.md
-*(Place in `prac4-http-appointments/`)*
 
-```markdown
 # Appointment Server (with Image Support)
 
 A multi-user appointment management server accessible via a web browser. Users can add, search, and delete appointments, and optionally upload an image for each entry. The server handles HTTP requests concurrently and persists all data to a plain text file and an images folder.
@@ -53,8 +50,8 @@ Endpoint	Method	Description
 /search?q=<keyword>	GET	Shows search results matching the keyword.
 /image?name=<filename>	GET	Serves the image file from the images/directory.
 
-File Structure
-text
+#File Structure
+
 appointment-server-image/
 ├── AppointmentServer.java      # Main server + inner ClientHandler
 ├── appointments.txt            # (auto-generated) saved appointment data
@@ -63,7 +60,7 @@ appointment-server-image/
 └── README.md                   # This file
 * appointments.txt format: id|date|time|description|imageFile (one per line). You can manually edit this file while the server is stopped.
 
-Notes / Caveats
+#Notes / Caveats
 * The default port is 8090. If that port is already in use, change the PORT constant in the source.
 * Image uploads are read entirely into memory; for very large files (e.g., >10 MB) this may be heavy – but for typical appointment pictures it's fine.
 * This is a demonstration server – it does not implement authentication, HTTPS, or comprehensive input sanitisation. Do not expose it to the public internet.
