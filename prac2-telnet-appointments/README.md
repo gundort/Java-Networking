@@ -1,5 +1,4 @@
 
-
 ---
 
 ### Prac 2 - README.md
@@ -38,25 +37,12 @@ A multi-user appointment management server. Clients connect via telnet and use s
    ```bash
    git clone https://github.com/your-username/appointment-server.git
    cd appointment-server
-Compile the Java source:
 
-bash
-javac AppointmentServer.java
-Run the server:
-
-bash
-java AppointmentServer
-The server will start on port 8088 (default) and display:
-
-text
-Appointment Server started on port 8088
-Connect using: telnet localhost 8088
+4. Compile the Java source: bash  javac AppointmentServer.java 
+6. Run the server: bash  java AppointmentServer  The server will start on port 8088 (default) and display: text  Appointment Server started on port 8088
+7. Connect using: telnet localhost 8088 
 Usage
-
-Connect from another terminal:
-
-bash
-telnet localhost 8088
+1. Connect from another terminal:  telnet localhost 8088 
 You'll see a welcome banner and a > prompt.
 Type commands (case-insensitive) and press Enter.
 Command	Example	Description
@@ -66,18 +52,19 @@ SEARCH <keyword>	SEARCH party	Finds appointments whose description contains the 
 LIST	LIST	Shows all appointments with their indices.
 HELP	HELP	Displays command reference.
 EXIT	EXIT	Disconnects the client.
-All changes are automatically saved to appointments.txt in the server's working directory.
-Multiple clients can connect simultaneously; each gets its own thread.
+1. All changes are automatically saved to appointments.txt in the server's working directory.
+2. Multiple clients can connect simultaneously; each gets its own thread.
+
 File Structure
 
-text
 appointment-server/
 ├── AppointmentServer.java      # Main server + inner ClientHandler
 ├── appointments.txt            # (auto-generated) saved data
 └── README.md                   # This file
-Notes / Caveats
 
-The server uses ANSI escape codes for colours. If your terminal does not support them, you may see strange characters – you can safely ignore them or modify the code to disable ANSI.
-Backspace handling works for most terminals, but may behave differently on Windows (use a terminal like Git Bash or WSL for best results).
-The appointments.txt format is: date|time|description (one per line). You can edit it manually while the server is stopped.
-The default port is 8088; you can change it by editing the port variable in main().
+
+Notes / Caveats
+* The server uses ANSI escape codes for colours. If your terminal does not support them, you may see strange characters – you can safely ignore them or modify the code to disable ANSI.
+* Backspace handling works for most terminals, but may behave differently on Windows (use a terminal like Git Bash or WSL for best results).
+* The appointments.txt format is: date|time|description (one per line). You can edit it manually while the server is stopped.
+* The default port is 8088; you can change it by editing the port variable in main().
